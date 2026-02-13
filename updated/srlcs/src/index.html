@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airport Robotic Luggage System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>✈ Airport Robotic Luggage Collection</h1>
+
+        <!-- Face Recognition Section -->
+        <div class="card">
+            <h2>Face Recognition Verification</h2>
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <button onclick="captureFace()">Verify Face</button>
+            <p id="faceStatus"></p>
+        </div>
+
+        <!-- Suitcase Detection Section -->
+        <div class="card">
+            <h2>Suitcase Recognition</h2>
+            <button onclick="detectSuitcase()">Scan Suitcase</button>
+            <p id="suitcaseStatus"></p>
+        </div>
+
+        <!-- Weight Checking Section -->
+        <div class="card">
+            <h2>Bag Weight Check (Max 32kg)</h2>
+            <input type="number" id="weightInput" placeholder="Enter Bag Weight (kg)">
+            <button onclick="checkWeight()">Check Weight</button>
+            <p id="weightStatus"></p>
+        </div>
+</body>
+</html>
+
