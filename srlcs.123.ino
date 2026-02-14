@@ -135,7 +135,16 @@ for(int i= 0;i<5;i++){
    servo1.write(servo1PosSaves[i])
    servo2.write(servo2PosSaves[i])
    servo3.write(servo3PosSaves[i])
-   Serial.print
+   Serial.println("potentimeter Angles:")
+    Serial.println(servo1PosSaves[i]);
+     Serial.println(servo2PosSaves[i]);
+     Serial.println(servo3PosSaves[i]);
+ delay(1050);
+}
+}
+delay(300);
+}
+ 
 }
 
 
